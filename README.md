@@ -1,7 +1,7 @@
 # ec2-start-stop-by-awslambda
 To start and stop EC2 instances at regular intervals using the AWS Lambda service
 
-## **Setting Up Lambda IAM Role**
+## **Step1: Setting Up Lambda IAM Role**
 To grant necessary permissions to your Lambda function, follow these steps:
 
 #### Access AWS Management Console:
@@ -46,3 +46,13 @@ To grant necessary permissions to your Lambda function, follow these steps:
   ]
 }
 ```
+## **Step 2: Create Lambda Function**
+```bash
+1. Navigate to Lambda service and create a function.
+2. Select "Author from scratch" and provide a function name.
+3. Choose Runtime (Python3.9), Architecture (x86_64), and Execution role. Then click "Create function".
+```
+
+## **Step 3: Configure Lambda Function**
+Write a Lambda function to start or stop EC2 instances.
+
