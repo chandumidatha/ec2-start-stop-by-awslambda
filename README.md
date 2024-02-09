@@ -4,19 +4,24 @@ To start and stop EC2 instances at regular intervals using the AWS Lambda servic
 ## **Setting Up Lambda IAM Role**
 To grant necessary permissions to your Lambda function, follow these steps:
 
-### Access AWS Management Console:
-#### Go to the IAM Service:
-#### Navigate to the IAM (Identity and Access Management) service.
-
-### Create a New Role:
-#### Click on "Roles" in the left-hand navigation pane.
-#### Click the "Create role" button.
-
-### Select Lambda as the Service:
-#### Choose "Lambda" as the service that will use this role, then click "Next: Permissions".
-#### Define Permissions:
-#### Switch to the "JSON" tab.
+#### Access AWS Management Console:
+```bash
+1. Go to the IAM Service:
+2. Navigate to the IAM (Identity and Access Management) service.
+```
+#### Create a New Role:
+```bash
+1. Click on "Roles" in the left-hand navigation pane.
+2. Click the "Create role" button.
+```
+#### Select Lambda as the Service:
+```bash
+1. Choose "Lambda" as the service that will use this role, then click "Next: Permissions".
+2. Define Permissions:
+3. Switch to the "JSON" tab.
+```
 #### Replace any existing JSON with the provided IAM policy:
+
 ```bash
 {
   "Version": "2012-10-17",
